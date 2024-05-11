@@ -24,6 +24,10 @@ public class Scripture
         else 
         {
             Console.WriteLine(reference);
+            int hiddenCount = words.Count(word => word._isHidden);
+            int totalWords = words.Count;
+            int visibleCount = totalWords - hiddenCount;
+            Console.WriteLine($"Words hidden: {hiddenCount}/{totalWords}");
             foreach (Word word in words)
             {
                 Console.Write(word + " ");
@@ -34,7 +38,7 @@ public class Scripture
 
     public void HideRandomWord()
     {
-        var unhiddenWords = words.Where(word => !word.isHidden).ToList();
+        var unhiddenWords = words.Where(word => !word._isHidden).ToList();
         if (unhiddenWords.Count > 0)
         {
             int index = random.Next(0, unhiddenWords.Count);
@@ -44,7 +48,7 @@ public class Scripture
 
     public bool AllWordsHidden()
     {
-        return words.All(word => word.isHidden);
+        return words.All(word => word._isHidden);
     }
 }
     
