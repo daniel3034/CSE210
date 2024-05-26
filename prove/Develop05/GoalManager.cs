@@ -2,6 +2,7 @@ class GoalManager
 {
     private List<Goal> goals = new List<Goal>();
     private int totalScore = 0;
+    private LevelingSystem levelingSystem = new LevelingSystem();
 
     public void AddGoal(Goal goal)
     {
@@ -12,7 +13,9 @@ class GoalManager
     {
         if (goalIndex >= 0 && goalIndex < goals.Count)
         {
-            totalScore += goals[goalIndex].RecordEvent();
+            int pointsEarned = goals[goalIndex].RecordEvent();
+            totalScore += pointsEarned;
+            levelingSystem.AddExperience(pointsEarned);
         }
     }
 

@@ -1,3 +1,5 @@
+// Added a leveling system.
+
 class Program
 {
     static void Main(string[] args)
@@ -110,5 +112,10 @@ class Program
         Console.Write("Enter filename to load goals: ");
         string filename = Console.ReadLine();
         goalManager.Load(filename);
+    }
+
+    static void Levels(string[] args)
+    {
+        LevelingSystem levelingSystem = new LevelingSystem();
     }
 }
