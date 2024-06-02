@@ -13,21 +13,21 @@ class Program
             new Video("Polymorphism Explained", "Bob Brown", 750)
         };
 
-        videos[0].AddComment(new Comment("User1", "Great explanation!"));
-        videos[0].AddComment(new Comment("User2", "Very helpful, thanks."));
-        videos[0].AddComment(new Comment("User3", "Could you make a video on interfaces?"));
+        videos[0].AddComment(new Comment("nisto", "Great explanation!"));
+        videos[0].AddComment(new Comment("honte", "Very helpful, thanks."));
+        videos[0].AddComment(new Comment("crout", "Could you make a video on interfaces?"));
         
-        videos[1].AddComment(new Comment("User4", "Clear and concise."));
-        videos[1].AddComment(new Comment("User5", "Loved the examples."));
-        videos[1].AddComment(new Comment("User6", "I was confused before watching this."));
+        videos[1].AddComment(new Comment("antho", "Clear and concise."));
+        videos[1].AddComment(new Comment("stort", "Loved the examples."));
+        videos[1].AddComment(new Comment("rownp", "I was confused before watching this."));
         
-        videos[2].AddComment(new Comment("User7", "Inheritance made easy!"));
-        videos[2].AddComment(new Comment("User8", "Thanks for the insights."));
-        videos[2].AddComment(new Comment("User9", "Perfect timing for my exam prep."));
+        videos[2].AddComment(new Comment("dista", "Inheritance made easy!"));
+        videos[2].AddComment(new Comment("onger", "Thanks for the insights."));
+        videos[2].AddComment(new Comment("ecome", "Perfect timing for my exam prep."));
         
-        videos[3].AddComment(new Comment("User10", "Polymorphism is clearer now."));
-        videos[3].AddComment(new Comment("User11", "Great video."));
-        videos[3].AddComment(new Comment("User12", "Looking forward to more content."));
+        videos[3].AddComment(new Comment("thito", "Polymorphism is clearer now."));
+        videos[3].AddComment(new Comment("eryde", "Great video."));
+        videos[3].AddComment(new Comment("iandr", "Looking forward to more content."));
 
         foreach (var video in videos)
         {
